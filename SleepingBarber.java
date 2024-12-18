@@ -2,7 +2,7 @@ import java.util.concurrent.Semaphore;
 
 public class SleepingBarber {
     // Number of barbers, chairs, and customers
-    private static final int NUM_BARBERS = 3;
+    private static final int NUM_BARBERS = 1;
     private static final int NUM_CHAIRS = 5;
 
     // Semaphores for synchronization
@@ -11,7 +11,7 @@ public class SleepingBarber {
     private static final Semaphore accessWaitingChairs = new Semaphore(1);
 
     // Track available chairs
-    private static int waitingCustomers = 0;
+    private static int waitingCustomers = 2;
 
     public static void main(String[] args) {
         // Create barber threads
